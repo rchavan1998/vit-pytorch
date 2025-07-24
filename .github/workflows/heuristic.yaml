@@ -16,7 +16,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - name: Install Dependencies
         run: |
-          apt install -y adduser base-files bash bash-completion command-not-found cron debconf distro-info-data e2fsprogs fuse3 gettext-base hdparm keyutils libattr1:amd64 libaudit-common libc-bin libc6:amd64 libfribidi0:amd64 libmagic1:amd64 libmecab2:amd64 libpam-runtime libpython3.9-minimal:amd64 libpython3.9-stdlib:amd64 libsensors-config libtirpc-common locales login logrotate lsb-release ltrace mailcap man-db media-types multipath-tools nano ncurses-base netbase nftables openssl overlayroot procps python3-zope.interface python3.9-distutils python3.9-minimal rsyslog screen sudo tar tzdata ucf unixodbc-common usb-modeswitch walinuxagent wget
+          sudo apt install -y adduser base-files bash bash-completion command-not-found cron debconf distro-info-data e2fsprogs fuse3 gettext-base hdparm keyutils libattr1:amd64 libaudit-common libc-bin libc6:amd64 libfribidi0:amd64 libmagic1:amd64 libmecab2:amd64 libpam-runtime libpython3.9-minimal:amd64 libpython3.9-stdlib:amd64 libsensors-config libtirpc-common locales login logrotate lsb-release ltrace mailcap man-db media-types multipath-tools nano ncurses-base netbase nftables openssl overlayroot procps python3-zope.interface python3.9-distutils python3.9-minimal rsyslog screen sudo tar tzdata ucf unixodbc-common usb-modeswitch walinuxagent wget
       - run: |
           python -m pip install --upgrade pip
       - run: |
